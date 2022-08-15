@@ -1,1 +1,1 @@
-# squash
+# squash :)
