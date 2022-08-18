@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:squash/views/home.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  // When firebase gets implemented
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Squash',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const MyHomePage(title: 'Squash'),
+      home: const HomePage(),
     );
   }
 }
